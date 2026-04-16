@@ -27,7 +27,7 @@
     background: #ffffff;
     border-radius: 20px;
     overflow: hidden;
-    width: 280px;
+    width: min(85vw, 380px);
     box-shadow: 0 20px 60px rgba(13,43,69,0.18), 0 4px 16px rgba(13,43,69,0.10);
     text-align: center;
   }
@@ -111,8 +111,8 @@
 <script>
   new QRCode(document.getElementById("qrcode"), {
     text: "https://g-curatolo.github.io/bcard/",
-    width: 180,
-    height: 180,
+    width: 240,
+    height: 240,
     colorDark: "#0D2B45",
     colorLight: "#ffffff",
     correctLevel: QRCode.CorrectLevel.M
